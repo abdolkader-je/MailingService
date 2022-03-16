@@ -20,15 +20,14 @@ namespace MailingServices.Controllers
         [HttpGet("Sender")]
        // [Route("Snder")]
 
-        public  Task Send()
+        public  IActionResult Send()
         {
             List<string> recevers = new List<string>();
             recevers.Add("kaddora1@gmail.com");
             recevers.Add("kaddora7@gmail.com");
             
             Emails.SendEmail("Testing","OOOOOOOOOO", recevers,null, Priority.Normal);
-            return "h";
-            
+            return Ok("Email Sent");
         }
     }
 }
