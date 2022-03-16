@@ -3,11 +3,11 @@ using System.Net.Mail;
 
 public class Emails
 {
-    private static readonly string host = "imap.gmail.com";
-    private static readonly string username = "kaddora7@gmail.com";
-    private static readonly string password = "0965691231";
-    private static readonly string displayName = "Oasis - IBS";
-    private static readonly int port = 993;
+    private static readonly string host = "smtp.gmail.com";
+    private static readonly string username = "Your Email";
+    private static readonly string password = "Your Password";
+    private static readonly string displayName = "Sendr Name";
+    private static readonly int port = 465;
 
     public static void SendEmail(string subject, string body, IList<string> receivers,
                                  ICollection<IFormFile> files = null,
